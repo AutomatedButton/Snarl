@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Snarl</title>
+        <link rel="stylesheet" href="index.css" />
+        <div id="start" class="flex-container">
+            <div class="flex-child">
+                <button id="start-btn">Start Game</button>
+                <br />
+                <br />
+                <label for="players"># of Players</label>
+                <input id="players" type="text" />
+                <br />
+                <br />
+                <label for="level">Level Start</label>
+                <input id="level" type="text" />
+                <br />
+                <br />
+                <label for="observe">Observe</label>
+                <input id="observe" type="checkbox" />
+                <br />
+                <br />
+                <label for="levels">Levels</label>
+                <input id="levels" type="file" />
+            </div>
+        </div>
+
+        <script type="module" src="Game/Tile.js"></script>
+        <script type="module" src="Game/Node.js"></script>
+        <script type="module" src="Common/Player.js"></script>
+        <script type="module" src="Game/Adversary.js"></script>
+        <script type="module" src="Game/RuleChecker.js"></script>
+        <script type="module" src="Game/Render.js"></script>
+        <script type="module" src="Game/Level.js"></script>
+        <script type="module" src="Game/GameState.js"></script>
+        <script type="module" src="Game/GameManager.js"></script>
+        <script type="module" src="Game/webSnarl.js"></script>
+    </head>
+</html>

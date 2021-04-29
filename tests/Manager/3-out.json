@@ -1,0 +1,188 @@
+[{
+        "type": "state",
+        "level": {
+            "type": "level",
+            "rooms": [{
+                "type": "room",
+                "origin": [3, 1],
+                "bounds": {
+                    "rows": 8,
+                    "columns": 8
+                },
+                "layout": [
+                    [1, 1, 2, 1, 1, 1, 1, 1],
+                    [1, 1, 1, 1, 1, 1, 1, 1],
+                    [1, 2, 1, 1, 1, 1, 1, 1],
+                    [1, 1, 1, 1, 1, 1, 1, 1],
+                    [1, 1, 1, 1, 1, 1, 1, 1],
+                    [1, 1, 1, 1, 1, 1, 1, 1],
+                    [1, 1, 1, 1, 1, 1, 1, 1],
+                    [1, 1, 1, 1, 1, 1, 1, 1]
+                ]
+            }, {
+                "type": "room",
+                "origin": [0, 1],
+                "bounds": {
+                    "rows": 2,
+                    "columns": 2
+                },
+                "layout": [
+                    [1, 1],
+                    [2, 1]
+                ]
+            }],
+            "objects": [{
+                "type": "key",
+                "position": [5, 2]
+            }],
+            "hallways": [{
+                "type": "hallway",
+                "from": [3, 2],
+                "to": [1, 2],
+                "waypoints": []
+            }]
+        },
+        "players": [{
+            "type": "player",
+            "name": "ferd",
+            "position": [4, 2]
+        }, {
+            "type": "player",
+            "name": "dio",
+            "position": [5, 3]
+        }],
+        "adversaries": [{
+            "type": "ghost",
+            "name": "ghost1",
+            "position": [14, 12]
+        }],
+        "exit-locked": true
+    },
+    [
+        ["ferd", {
+            "type": "player-update",
+            "layout": [
+                [0, 1, 1, 0, 0],
+                [0, 2, 1, 0, 0],
+                [0, 0, 1, 0, 0],
+                [0, 1, 1, 2, 1],
+                [0, 1, 1, 1, 1]
+            ],
+            "position": [2, 2],
+            "objects": [],
+            "actors": []
+        }],
+        ["dio", {
+            "type": "player-update",
+            "layout": [
+                [1, 1, 2, 1, 1],
+                [1, 1, 1, 1, 1],
+                [1, 2, 1, 1, 1],
+                [1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1]
+            ],
+            "position": [5, 3],
+            "objects": [{
+                "type": "key",
+                "position": [5, 2]
+            }],
+            "actors": []
+        }],
+        ["ferd", {
+            "type": "move",
+            "to": [4, 2]
+        }, "OK"],
+        ["ferd", {
+            "type": "player-update",
+            "layout": [
+                [0, 0, 1, 0, 0],
+                [0, 1, 1, 2, 1],
+                [0, 1, 1, 1, 1],
+                [0, 1, 2, 1, 1],
+                [0, 1, 1, 1, 1]
+            ],
+            "position": [4, 2],
+            "objects": [{
+                "type": "key",
+                "position": [5, 2]
+            }],
+            "actors": [{
+                "type": "player",
+                "name": "dio",
+                "position": [5, 3]
+            }]
+        }],
+        ["dio", {
+            "type": "player-update",
+            "layout": [
+                [1, 1, 2, 1, 1],
+                [1, 1, 1, 1, 1],
+                [1, 2, 1, 1, 1],
+                [1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1]
+            ],
+            "position": [5, 3],
+            "objects": [{
+                "type": "key",
+                "position": [5, 2]
+            }],
+            "actors": [{
+                "type": "player",
+                "name": "ferd",
+                "position": [4, 2]
+            }]
+        }],
+        ["dio", {
+            "type": "move",
+            "to": [3, 6]
+        }, "Invalid"],
+        ["dio", {
+            "type": "move",
+            "to": [4, 7]
+        }, "Invalid"],
+        ["dio", {
+            "type": "move",
+            "to": [6, 7]
+        }, "Invalid"],
+        ["ferd", {
+            "type": "player-update",
+            "layout": [
+                [0, 0, 1, 0, 0],
+                [0, 1, 1, 2, 1],
+                [0, 1, 1, 1, 1],
+                [0, 1, 2, 1, 1],
+                [0, 1, 1, 1, 1]
+            ],
+            "position": [4, 2],
+            "objects": [{
+                "type": "key",
+                "position": [5, 2]
+            }],
+            "actors": [{
+                "type": "player",
+                "name": "dio",
+                "position": [5, 3]
+            }]
+        }],
+        ["dio", {
+            "type": "player-update",
+            "layout": [
+                [1, 1, 2, 1, 1],
+                [1, 1, 1, 1, 1],
+                [1, 2, 1, 1, 1],
+                [1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1]
+            ],
+            "position": [5, 3],
+            "objects": [{
+                "type": "key",
+                "position": [5, 2]
+            }],
+            "actors": [{
+                "type": "player",
+                "name": "ferd",
+                "position": [4, 2]
+            }]
+        }]
+    ]
+]

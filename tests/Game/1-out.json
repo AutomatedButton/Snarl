@@ -1,0 +1,9 @@
+{
+  "traversable": true,
+  "object": "key",
+  "type": "room",
+  "reachable": [
+    [5, 15],
+    [15, 15]
+  ]
+}
